@@ -1,0 +1,146 @@
+* {
+    margin: 0px auto;
+    box-sizing: border-box;
+    font-family: Karla;
+    height: auto;
+}
+
+body {
+
+    background-color: hsl(148, 38%, 91%);
+
+}
+
+.input-error {
+    border: 2px solid red;
+}
+
+
+.main {
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 2%;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 700px;
+
+
+}
+
+/*Contact title*/
+.contact-h1 {
+    padding: 25px 0px 25px 0px;
+    color: hsl(187, 24%, 22%);
+    font-weight: 700;
+
+}
+
+/*Form styles*/
+
+span {
+    color: hsl(169, 82%, 27%);
+}
+
+.form-title {
+    color: hsl(187, 24%, 22%);
+    font-size: 12px;
+}
+
+.form-input {
+    border: 1px solid hsl(186, 15%, 59%);
+    margin-right: 20px;
+    /* Add space between the form-input divs */
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.form-input:hover {
+    border: 1px hsl(169, 82%, 27%) solid;
+
+}
+
+.form-input:focus,
+.form-input-query:focus {
+    outline: none;
+
+    border: 1px hsl(169, 82%, 27%) solid;
+}
+
+.label-query {
+    padding: 8px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-input-query:hover {
+    background-color: hsl(148, 38%, 91%);
+    /* Change background on hover */
+    color: hsl(187, 24%, 22%);
+    /* Change text color on hover */
+}
+
+input[type="radio"] {
+
+    width: 15px;
+    height: 15px;
+}
+
+input[type="radio"]:checked {
+    accent-color: hsl(169, 82%, 27%);
+    /* Color cuando está seleccionado */
+    cursor: pointer;
+
+}
+#checkbox:checked{
+    accent-color: hsl(169, 82%, 27%);
+}
+
+/* Background color when selected */
+.form-input-query.active {
+    background-color: hsl(148, 38%, 91%);
+    color: hsl(187, 24%, 22%);
+}
+
+
+
+#general,
+#support {
+    margin-left: 19px;
+    align-items: center;
+
+}
+
+.label-query {
+    margin-left: 8px;
+    align-items: center;
+
+
+
+}
+
+.query-div .form-input:last-child {
+    margin-right: 0;
+    /* Remove margin from the last .form-input to avoid extra spacing on the right */
+}
+
+#check-label,#checkbox{
+    cursor: pointer;
+}
+
+/*submit button*/
+
+#submit-btn {
+    background-color: hsl(169, 82%, 27%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 50px;
+    font-size: 12px;
+    width: auto;
+}
+#submit-btn:hover{
+background-color:hsl(169, 82%, 15%);
+color: hsl(0, 0%, 100%);
+transition: ease-in 0.3s;
+ }
