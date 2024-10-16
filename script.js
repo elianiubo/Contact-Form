@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-
+    const successEl = document.querySelector('.success');
     document.getElementById("contact-form").addEventListener("submit", (event) => {
         const contactForm = event.target;
         event.preventDefault();
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!isValid) {
             displayError(contactForm);
         } else {
-            alert("This form has been submitteed");
+            succesMessage();//success message displayer
         }
     });
 
@@ -21,6 +21,15 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("email incorrect");
         return emailRegex.test(email);
 
+    }
+    function succesMessage(){
+        const successPopup = document.querySelector(".success");
+        successPopup.classList.remove("hidden");
+        successPopup.setAttribute("aria-hidden", "false");
+        setTimeout(() => {
+            successPopup.classList.add("hidden");
+            successPopup.setAttribute("aria-hidden", "true");
+        }, 3000);
     }
     // Function to validate the contact form
     function validateContactForm(contactForm) {

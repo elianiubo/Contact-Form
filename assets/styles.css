@@ -1,12 +1,12 @@
-* {
-    margin: 0px auto;
-    box-sizing: border-box;
-    font-family: Karla;
-    height: auto;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-
+    min-height: 100vh;
     background-color: hsl(148, 38%, 91%);
 
 }
@@ -22,7 +22,8 @@ body {
     border-radius: 2%;
     padding-left: 30px;
     padding-right: 30px;
-    width: 700px;
+    width: 924px;
+    
 
 
 }
@@ -91,7 +92,8 @@ input[type="radio"]:checked {
     cursor: pointer;
 
 }
-#checkbox:checked{
+
+#checkbox:checked {
     accent-color: hsl(169, 82%, 27%);
 }
 
@@ -123,7 +125,8 @@ input[type="radio"]:checked {
     /* Remove margin from the last .form-input to avoid extra spacing on the right */
 }
 
-#check-label,#checkbox{
+#check-label,
+#checkbox {
     cursor: pointer;
 }
 
@@ -139,8 +142,58 @@ input[type="radio"]:checked {
     font-size: 12px;
     width: auto;
 }
-#submit-btn:hover{
-background-color:hsl(169, 82%, 15%);
-color: hsl(0, 0%, 100%);
-transition: ease-in 0.3s;
- }
+
+#submit-btn:hover {
+    background-color: hsl(169, 82%, 15%);
+    color: hsl(0, 0%, 100%);
+    transition: ease-in 0.3s;
+}
+
+/*Success message*/
+.hidden {
+
+    display: none;
+
+
+}
+
+.success {
+    position: absolute;
+    top: 24px;
+    margin-inline: 24px;
+    padding: 24px;
+    background-color: hsl(187, 24%, 22%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+}
+
+/*Media querys*/
+@media (max-width: 608px){
+    .main{
+        max-width: 450px;
+    }
+    .query-div{
+        flex-direction: column;
+        
+    }
+    .form-input-query{
+        margin-right: 0px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 505px){
+    .main{
+        max-width: 350px;
+    }
+}
+@media (max-width: 375px){
+    .main{
+        max-width: 280px;
+    }
+    .contact-h1{
+        font-size: 25px;
+    }
+    .form-title{
+        font-size: 10px;
+    }
+}
