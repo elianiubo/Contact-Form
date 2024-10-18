@@ -37,6 +37,13 @@
       margin-bottom: 0px;
       margin-top: 5px;
     }
+
+    .hidden {
+
+      display: none;
+
+
+    }
   </style>
 </head>
 
@@ -93,32 +100,34 @@
           <p id="errorMessage" class="errorMessage">This field is required</p>
         </div>
       </div>
-        <div class="row">
-          <div class=" col-12 mb-3 check-label">
-            <input type="checkbox" name="checkbox" id="checkbox">
-            <label id="check-label" for="checkbox" class="form-label form-consent form-title">I consent to being contacted by the team
-              <span>*</span></label>
-            <p class="errorMessage" id="errorConsent">To submit this form, please consent to being contacted</p>
-          </div>
+      <div class="row">
+        <div class=" col-12 mb-3 check-label">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <label id="check-label" for="checkbox" class="form-label form-consent form-title">I consent to being contacted
+            by the team
+            <span>*</span></label>
+          <p class="errorMessage" id="errorConsent">To submit this form, please consent to being contacted</p>
         </div>
-        <div class="row">
-          <div class="d-flex flex-grow-1">
-            <button id="submit-btn" type="submit" class="submit-button flex-grow-1"> Submit</button>
-          </div>
+      </div>
+      <div class="row">
+        <div class="d-flex flex-grow-1">
+          <button id="submit-btn" type="submit" class="submit-button flex-grow-1"> Submit</button>
         </div>
+      </div>
     </form>
   </main>
-    <!--Message Sent!
+  <!--Message Sent!
       <!-- Message sent successfully popup -->
-      <div class="success hidden" aria-hidden>
-        <div class="flex">
-          <img src="./assets/images/icon-success-check.svg" alt="Success!" />
-          <p class="body-m-bold">Message Sent!</p>
-        </div>
-        <p class="body-s green200">
-          Thanks for completing the form. We’ll be in touch soon!
-        </p>
-  
+  <div class="success hidden" aria-hidden>
+    <div class="flex">
+      <img src="./assets/images/icon-success-check.svg" alt="Success!" />
+      <p class="sent">Message Sent!</p>
+    </div>
+    <p class=" completed">
+      Thanks for completing the form. We’ll be in touch soon!
+    </p>
+  </div>
+
 
   <footer>
     <div class="attribution mt-5">

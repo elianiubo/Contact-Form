@@ -22,7 +22,7 @@ body {
     border-radius: 2%;
     padding-left: 30px;
     padding-right: 30px;
-    width: 624px;
+    width: 724px;
     
 
 
@@ -152,22 +152,40 @@ input[type="radio"]:checked {
 }
 
 /*Success message*/
-.hidden {
 
-    display: none;
-
-
-}
 
 .success {
-    position: absolute;
-    top: 24px;
-    margin-inline: 24px;
-    padding: 24px;
+    padding: 18px 23px 5px 23px;
     background-color: hsl(187, 24%, 22%);
     color: hsl(0, 0%, 100%);
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    position: fixed; 
+    top: 10px; 
+    left: 50%; /* Position to the center horizontally */
+    transform: translateX(-50%); /* Center align using transform */
+    width: auto;
+    max-width: 90%; /* Ensure it doesn't get too wide on small screens */
+    
+   
+    
+    
 }
+.flex img, .sent{
+    display: inline-flex;
+    font-size: 14px;
+   
+}
+.sent{
+    font-weight: 700;
+}
+.completed{
+    color: hsl(148, 38%, 91%);
+    font-size: 13px;
+}
+
+
 
 /*Media querys*/
 @media (max-width: 608px){

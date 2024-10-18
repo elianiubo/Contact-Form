@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const successEl = document.querySelector('.success');
+    
     document.getElementById("contact-form").addEventListener("submit", (event) => {
         const contactForm = event.target;
         event.preventDefault();
@@ -106,11 +106,11 @@ document.addEventListener("DOMContentLoaded", () => {
             radio.closest('.form-input-query').classList.add('active');
         });
     });
-    //continuar
+    
     document.getElementById("check-label").addEventListener('change', () => {
         
         let checkbox = document.getElementById("checkbox");
-        //checked weather is checkd or not and chages it
+        //checked wether is checkd or not and changes it
         checkbox.checked = !checkbox.checked;
         
 
